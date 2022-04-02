@@ -24,3 +24,6 @@
 
 
 # Sources
+https://www.npmjs.com/package/aframe-particle-system-component
+
+https://www.npmjs.com/package/aframe-speech-command-component
