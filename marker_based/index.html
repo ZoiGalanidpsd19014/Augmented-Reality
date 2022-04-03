@@ -32,11 +32,17 @@
         <a-entity camera></a-entity>
         <a-entity position="0 2.90 -15" particle-system="preset: snow;" particleCount="10000000" size="10000" opacity = "100"  maxage ="60"></a-entity>
         <a-entity position="0 2.25 -15" particle-system="preset: rain"></a-entity>
-        <a-entity id="annyang" annyang-speech-recognition></a-entity>
-        <a-entity id="snow"
-                  speech-command__show="command: start; type: attribute; attribute: visible; value: true;"
-                  speech-command__hide="command: stop; type: attribute; attribute: visible; value: false;">
+           
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.5.0/annyang.min.js"></script>
 
+        <script src="aframe-speech-command-component.js"></script>
+
+        <a-entity id="annyang" annyang-speech-recognition></a-entity>
+
+        <a-entity id="snow"
+                  speech-command__show="command: start; type: attribute; attribute : visible; value: true;"
+                  speech-command__hide="command: stop; type: attribute; attribute : visible; value: false;">
         </a-entity>
     </a-scene>
 </body>
