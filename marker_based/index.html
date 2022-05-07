@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html>
-    <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
-    <!-- we import arjs version without NFT but with marker + location based support -->
-    <!--<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>-->
-    <script src="build/aframe-ar.js"></script>
-    
-    <!-- particles system component -->
-    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
-    
-    <!-- speech command component -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.5.0/annyang.min.js"></script>
-    <script src="build/aframe-speech-command-component.js"></script> 
-    
+<script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+<!-- we import arjs version without NFT but with marker + location based support -->
+<!--<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>-->
+<script src="build/aframe-ar.js"></script>
 
-    <body style="margin : 0px; overflow: hidden;">
-        <a-scene
-    vr-mode-ui="enabled: false;"
-    renderer="logarithmicDepthBuffer: true;"
-    embedded
-    arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
-  >
-        <a-marker preset="pattern-dpsd19014">
-            <a-entity id="box" geometry="primitive: box; width: 0.2; depth: 0.2; height: 0.2" position="0 0 0" material="color: #4CC3D9"></a-entity>
-        </a-marker>
+<!-- particles system component -->
+<script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+
+<!-- speech command component -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.5.0/annyang.min.js"></script>
+<script src="build/aframe-speech-command-component.js"></script>
+
+
+<body style="margin : 0px; overflow: hidden;">
+    <a-scene vr-mode-ui="enabled: false;"
+             renderer="logarithmicDepthBuffer: true;"
+             embedded
+             arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
+
+        <a-marker preset='pattern-dpsd19014'></a-marker>
+        <!-- it is the same as the marker below -->
+
+
+        <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
+        <a-marker type='pattern' url='https://github.com/ZoiGalanidpsd19014/Augmented-Reality/blob/main/marker_based/assets/pattern-dpsd.patt'></a-marker>
         <a-entity camera></a-entity>
-        </a-scene>
-    </body>
+    </a-scene>
+</body>
 </html>
