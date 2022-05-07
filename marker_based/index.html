@@ -21,29 +21,18 @@
              renderer="logarithmicDepthBuffer: true;"
              embedded
              arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
-        <a-marker preset="hiro">
+        <a-marker preset="pattern-dpsd19014">
 
-            <a-entity id="box" geometry="primitive: box; width: 0.7; depth: 0.7; height: 0.7" position="0 0 0" material="color: #4CF3N9"></a-entity>
-            <a-entity id="sphere" geometry="primitive: sphere; width: 0.06; depth: 0.2; height: 0.06" position="1 0 2" material="color: #9CB7D9"></a-entity>
-
-            <a-entity id="cylinder" geometry="primitive: cylinder; width: 0.06; depth: 5; height: 4.06" position="2 2 0" material="color: #8AD3B2"></a-entity>
+            
+           <a-text color="#83b0c4" value="Zoi Galani" width="6" rotation="-90 0 0" class="bolded" position="-1 0 -1"></a-text>
+           <a-image src="#my-image" width="1.5" height="1.5" rotation="-90 0 0" position="0 0 0"></a-image>
+           <a-entity id="box" geometry="primitive: box; width: 0.2; depth: 0.2; height: 1.0" position="0 0 0" material="color: #4CC3D9"></a-entity>
 
         </a-marker>
         <a-entity camera></a-entity>
-        <a-entity position="0 2.90 -15" particle-system="preset: snow;" particleCount="10000000" size="10000" opacity = "100"  maxage ="60"></a-entity>
-        <a-entity position="0 2.25 -15" particle-system="preset: rain"></a-entity>
-           
         
-        <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.5.0/annyang.min.js"></script>
-
-        <script src="aframe-speech-command-component.js"></script>
-
-        <a-entity id="annyang" annyang-speech-recognition></a-entity>
-
-        <a-entity id="snow"
-                  speech-command__show="command: start; type: attribute; attribute : visible; value: true;"
-                  speech-command__hide="command: stop; type: attribute; attribute : visible; value: false;">
-        </a-entity>
+        
+  
     </a-scene>
 </body>
 </html>
