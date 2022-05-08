@@ -31,9 +31,9 @@ Eπειδή αντιμετώπισα πολλά προβλήματα με την
 
 
 # Sources
-<a href="https://www.npmjs.com/package/aframe-particle-system-component">particle system component</a>
-<a href="https://www.npmjs.com/package/aframe-speech-command-component">speech command</a>
-<a href="https://www.youtube.com/watch?v=xXJ5KDMlcJQ">το βίντεο από το glitch</a>
-<a href="https://aframe.io/blog/arjs/">κώδικα για custom patterns</a>
-<a href="https://github.com/jeromeetienne/AR.js/issues/164#issuecomment-328830663">issue για πατερν που δε δουλεύει</a>
-<a href="https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html">φτιάξιμο μάρκερ</a> 
+<p><a href="https://www.npmjs.com/package/aframe-particle-system-component">particle system component</a></p>
+<p><a href="https://www.npmjs.com/package/aframe-speech-command-component">speech command</a></p>
+<p><a href="https://www.youtube.com/watch?v=xXJ5KDMlcJQ">το βίντεο από το glitch</a></p>
+<p><a href="https://aframe.io/blog/arjs/">κώδικα για custom patterns</a></p>
+<p><a href="https://github.com/jeromeetienne/AR.js/issues/164#issuecomment-328830663">issue για πατερν που δε δουλεύει</a></p>
+<p><a href="https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html">φτιάξιμο μάρκερ</a></p>
