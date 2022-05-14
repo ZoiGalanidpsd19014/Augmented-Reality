@@ -1,0 +1,293 @@
+{
+    "asset": {
+        "version": "2.0",
+        "generator": "Open Asset Import Library (assimp v5.0.5eb040c7)"
+    },
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 166262,
+            "type": "VEC3",
+            "max": [
+                -20.24920654296875,
+                28.513944625854493,
+                61.21109390258789
+            ],
+            "min": [
+                -52.113548278808597,
+                3.9613187313079836,
+                32.1649284362793
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 994509,
+            "type": "SCALAR",
+            "max": [
+                166261
+            ],
+            "min": [
+                0
+            ]
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 5973180,
+            "uri": "result.bin"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 1995144,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 1995144,
+            "byteLength": 3978036,
+            "target": 34963
+        }
+    ],
+    "materials": [
+        {
+            "name": "aiStandardSurface3",
+            "pbrMetallicRoughness": {
+                "metallicFactor": 0.0
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "pasted__pasted__bifrostLiquid1Mesh1",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 0,
+                    "indices": 1,
+                    "attributes": {
+                        "POSITION": 0
+                    }
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "RootNode",
+            "children": [
+                1
+            ]
+        },
+        {
+            "name": "pasted__pasted__bifrostLiquid1Mesh1_$AssimpFbx$_Translation",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                587.0472412109375,
+                -194.17982482910157,
+                -756.5044555664063,
+                1.0
+            ],
+            "children": [
+                2
+            ]
+        },
+        {
+            "name": "pasted__pasted__bifrostLiquid1Mesh1_$AssimpFbx$_RotationPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -587.2005004882813,
+                202.0110321044922,
+                757.7163696289063,
+                1.0
+            ],
+            "children": [
+                3
+            ]
+        },
+        {
+            "name": "pasted__pasted__bifrostLiquid1Mesh1_$AssimpFbx$_Rotation",
+            "matrix": [
+                0.7897779941558838,
+                0.0,
+                -0.6133927702903748,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.6133927702903748,
+                0.0,
+                0.7897779941558838,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                4
+            ]
+        },
+        {
+            "name": "pasted__pasted__bifrostLiquid1Mesh1_$AssimpFbx$_RotationPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                587.2005004882813,
+                -202.0110321044922,
+                -757.7163696289063,
+                1.0
+            ],
+            "children": [
+                5
+            ]
+        },
+        {
+            "name": "pasted__pasted__bifrostLiquid1Mesh1_$AssimpFbx$_ScalingOffset",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -551.0191040039063,
+                185.7733917236328,
+                711.0283813476563,
+                1.0
+            ],
+            "children": [
+                6
+            ]
+        },
+        {
+            "name": "pasted__pasted__bifrostLiquid1Mesh1_$AssimpFbx$_ScalingPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -36.18137741088867,
+                16.23763084411621,
+                46.688011169433597,
+                1.0
+            ],
+            "children": [
+                7
+            ]
+        },
+        {
+            "name": "pasted__pasted__bifrostLiquid1Mesh1_$AssimpFbx$_Scaling",
+            "matrix": [
+                0.4183676540851593,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.26061782240867617,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.4183676540851593,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                8
+            ]
+        },
+        {
+            "name": "pasted__pasted__bifrostLiquid1Mesh1_$AssimpFbx$_ScalingPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                36.18137741088867,
+                -16.23763084411621,
+                -46.688011169433597,
+                1.0
+            ],
+            "children": [
+                9
+            ]
+        },
+        {
+            "name": "pasted__pasted__bifrostLiquid1Mesh1",
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
+}
