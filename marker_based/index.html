@@ -18,7 +18,7 @@
             
             this.sphere1 = document.querySelector('#sphere1')
             this.sphere2 = document.querySelector('#sphere2')                                 
-            this.sphere3 = document.querySelector('#sphere3')
+            var Water = document.querySelector('#H2O')
             this.markerO = document.querySelector('#card-O')
             this.markerH = document.querySelector('#card-H')
             
@@ -41,12 +41,12 @@
             if (markerDistance<2){
     this.sphere1.setAttribute("visible", false)
     this.sphere2.setAttribute("Visible", false)                               
-    this.sphere3.setAttribute("Visible", true)                 
+    Water.setAttribute("Visible", true)                 
 
     } else {
     this.sphere1.setAttribute("visible", true)
     this.sphere2.setAttribute("visible", true)                                 
-    this.sphere3.setAttribute("Visible", false) 
+    Water.setAttribute("Visible", false) 
 
 }
         }
@@ -62,15 +62,17 @@
         <a-assets>
             <img id='CagneyCarnation' src='assets/c1ce96fb12ad41a10ec78094e4f9db8b.jpg'>
         </a-assets>
-          <a-assets>
-            <img id='Oxygen' >
-        </a-assets>
-          <a-assets>
-            <img id='Hydrogen' >
-        </a-assets>
-          <a-assets>
-            <img id='H2O' >
-        </a-assets>
+          <a-assets-item
+            id='Oxygen' >
+        </a-assets-item>
+          
+          <a-assets-item
+            id='Hydrogen' >
+        </a-assets-item>
+          
+          <a-assets-item
+            id='H2O' url='/assets/AnyConv.com__water_splash.gltf'>
+        </a-assets-item>
          
 
         <a-marker-camera type='pattern' url='/assets/pattern-dpsd19014.patt'>
