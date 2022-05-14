@@ -18,7 +18,9 @@
             
             this.sphere1 = document.querySelector('#sphere1')
             this.sphere2 = document.querySelector('#sphere2')                                 
-            this.sphere3 = document.querySelector('#sphere3')                                   
+            this.sphere3 = document.querySelector('#sphere3')
+            this.markerO = document.querySelector('#card-O')
+            this.markerH = document.querySelector('#card-H')
             
             
 
@@ -26,15 +28,15 @@
         tick: function() {
             
             
-  var markerDistance , marker1Position , marker2Position 
+  var markerDistance , markerOPosition , markerHPosition 
 
-                marker1Position = new THREE.Vector3();
-                this.marker1.object3D.getWorldPosition(marker1Position);
+                markerOPosition = new THREE.Vector3();
+                this.markerO.object3D.getWorldPosition(markerOPosition);
 
-                marker2Position = new THREE.Vector3();
-                this.marker2.object3D.getWorldPosition(marker2Position);
+                markerHPosition = new THREE.Vector3();
+                this.markerH.object3D.getWorldPosition(markerHPosition);
 
-                markerDistance = marker1Position.distanceTo(marker2Position);          
+                markerDistance = markerOPosition.distanceTo(markerHPosition);          
             
             if (markerDistance<2){
     this.sphere1.setAttribute("visible", false)
@@ -60,6 +62,16 @@
         <a-assets>
             <img id='CagneyCarnation' src='assets/c1ce96fb12ad41a10ec78094e4f9db8b.jpg'>
         </a-assets>
+          <a-assets>
+            <img id='Oxygen' src=''>
+        </a-assets>
+          <a-assets>
+            <img id='Hydrogen' src=''>
+        </a-assets>
+          <a-assets>
+            <img id='H2O' src=''>
+        </a-assets>
+         
 
         <a-marker-camera type='pattern' url='/assets/pattern-dpsd19014.patt'>
             <a-entity id="sphere" geometry="primitive: sphere; width: 0.2; depth: 0.2; height: 0.2" position="0 0 0" material="color: #4CC3D9"></a-entity>
