@@ -12,6 +12,44 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.5.0/annyang.min.js"></script>
 <script src="build/aframe-speech-command-component.js"></script>
 
+<script>
+      AFRAME.registerComponent("marker-distance", {
+        init: function() {  
+            
+            this.sphere1 = document.querySelector('#sphere1')
+            this.sphere2 = document.querySelector('#sphere2')                                 
+            this.sphere3 = document.querySelector('#sphere3')                                   
+            
+            
+
+        },
+        tick: function() {
+            
+            
+  var markerDistance , marker1Position , marker2Position 
+
+                marker1Position = new THREE.Vector3();
+                this.marker1.object3D.getWorldPosition(marker1Position);
+
+                marker2Position = new THREE.Vector3();
+                this.marker2.object3D.getWorldPosition(marker2Position);
+
+                markerDistance = marker1Position.distanceTo(marker2Position);          
+            
+            if (markerDistance<2){
+    this.sphere1.setAttribute("visible", false)
+    this.sphere2.setAttribute("Visible", false)                               
+    this.sphere3.setAttribute("Visible", false)                 
+
+    } else {
+    this.sphere1.setAttribute("visible", true)
+    this.sphere2.setAttribute("visible", true)                                 
+    this.sphere3.setAttribute("Visible", true) 
+
+}
+        }
+      })
+</script>
 
 <body style="margin : 0px; overflow: hidden;">
     <a-scene vr-mode-ui="enabled: false;"
@@ -23,22 +61,23 @@
             <img id='CagneyCarnation' src='assets/c1ce96fb12ad41a10ec78094e4f9db8b.jpg'>
         </a-assets>
 
-        <a-marker-camera preset='custom' type='pattern' url='marker_based/assets/pattern-dpsd19014.patt'>
-            <a-entity id="box" geometry="primitive: box; width: 0.2; depth: 0.2; height: 0.2" position="0 0 0" material="color: #4CC3D9"></a-entity>
+        <a-marker-camera type='pattern' url='/assets/pattern-dpsd19014.patt'>
+            <a-entity id="sphere" geometry="primitive: sphere; width: 0.2; depth: 0.2; height: 0.2" position="0 0 0" material="color: #4CC3D9"></a-entity>
             <a-text color="#491DB4" value='Zoi Galani' width="3" rotation="0 0 0" class="bolded" position="0 0 0"</a-text>
             <a-image src='#CagneyCarnation' width="1.7" height="0.9" rotation="0 0 0" position="0 0 0"></a-image>
         </a-marker-camera>
        
         
-        <a-marker-camera id='card-O' preset='ustom' type='pattern' url='assets/pattern-card-O.patt'>
-            <a-entity id="box" geometry="primitive: box; width: 0.2; depth: 0.2; height: 0.2" position="0 0 0" material="color: #4CC3D9"></a-entity>
+        <a-marker-camera id='card-O' type='pattern' url='/assets/pattern-card-O.patt'>
+            <a-entity id="sphere" geometry="primitive: sphere; width: 0.2; depth: 0.2; height: 0.2" position="0 0 0" material="color: #4CC3D9"></a-entity>
         </a-marker-camera>
         
-        <a-marker-camera id='card-H' preset='custom' type='pattern' url='assets/pattern-card-H.patt'>
-            <a-entity id="box" geometry="primitive: box; width: 0.2; depth: 0.2; height: 0.2" position="0 0 0" material="color: #4CC3D9"></a-entity>
+        <a-marker-camera id='card-H' type='pattern' url='/assets/pattern-card-H.patt'>
+            <a-entity id="sphere" geometry="primitive: sphere; width: 0.2; depth: 0.2; height: 0.2" position="0 0 0" material="color: #4CC3D9"></a-entity>
         </a-marker-camera>
         
         <a-entity camera></a-entity>
+        <a-entity marker-distance></a-entity>
             
     </a-scene>
 </body>
