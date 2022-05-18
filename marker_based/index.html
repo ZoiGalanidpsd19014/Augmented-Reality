@@ -14,39 +14,53 @@
 
 <script>
       AFRAME.registerComponent("marker-distance", {
-        init: function() {  
-            
-            this.sphere1 = document.querySelector('#sphere1')
-            this.sphere2 = document.querySelector('#sphere2')                                 
-            var Water = document.querySelector('#H2O')
-            this.markerO = document.querySelector('#card-O')
-            this.markerH = document.querySelector('#card-H')
-            
-            
+          
 
-        },
         tick: function() {
+              
+              
+   this.markerDistance()
+              
+        },          
+              
+              
+  markerDistance: function () {            
             
-            
-  var markerDistance , markerOPosition , markerHPosition 
 
-                markerOPosition = new THREE.Vector3();
-                this.markerO.object3D.getWorldPosition(markerOPosition);
+         var marker1Pos, marker2Pos
 
-                markerHPosition = new THREE.Vector3();
-                this.markerH.object3D.getWorldPosition(markerHPosition);
+         marker1Pos = new THREE.Vector3();
+         marker1.object3D.getWorldPosition(marker1Pos);
 
-                markerDistance = markerOPosition.distanceTo(markerHPosition);          
-            
-            if (markerDistance<2){
-    this.sphere1.setAttribute("visible", false)
-    this.sphere2.setAttribute("Visible", false)                               
-    Water.setAttribute("Visible", true)                 
+         marker2Pos = new THREE.Vector3();
+         marker2.object3D.getWorldPosition(marker2Pos);
 
-    } else {
-    this.sphere1.setAttribute("visible", true)
-    this.sphere2.setAttribute("visible", true)                                 
-    Water.setAttribute("Visible", false) 
+                //distance
+        var markerDistance = marker1Pos.distanceTo(marker2Pos);
+
+        var marker1 = document.querySelector("#pattern-card-O")
+        var marker2 = document.querySelector("#pattern-card-H")
+
+
+        var entity1 = document.querySelector('#oxygen_so')
+        var entity2 = document.querySelector('#hydrogen_so')
+        var entity3 = document.querySelector('#AnyConv.com__water_splash')
+
+
+  if (markerDistance < 2) {
+
+                    entity1.setAttribute('visible', false)
+                    entity2.setAttribute('visible', false)
+                    entity3.setAttribute('visible', true)
+		 
+                    }
+
+
+ else {
+
+                    entity1.setAttribute('visible', true)
+                    entity2.setAttribute('visible', true)
+                    entity3.setAttribute('visible', false)
 
 }
         }
@@ -60,7 +74,7 @@
              arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
         
         <a-assets>
-            <img id='CagneyCarnation' src='assets/c1ce96fb12ad41a10ec78094e4f9db8b.jpg'>
+            <img id="CagneyCarnation" src="assets/c1ce96fb12ad41a10ec78094e4f9db8b.jpg">
         </a-assets>
           <a-assets-item
             id='Oxygen' >
@@ -75,19 +89,21 @@
         </a-assets-item>
          
 
-        <a-marker-camera type='pattern' url='/assets/pattern-dpsd19014.patt'>
+        <a-marker preseet= 'custom' type='pattern' url='assets/pattern-dpsd19014.patt'>
             <a-entity id="sphere" geometry="primitive: sphere; width: 0.2; depth: 0.2; height: 0.2" position="0 0 0" material="color: #4CC3D9"></a-entity>
-            <a-text color="#491DB4" value='Zoi Galani' width="3" rotation="0 0 0" class="bolded" position="0 0 0"</a-text>
-            <a-image src='#CagneyCarnation' width="1.7" height="0.9" rotation="0 0 0" position="0 0 0"></a-image>
-        </a-marker-camera>
+            <a-text color="#491DB4" value="Zoi Galani" width="3" rotation="-90 0 0" class="bolded" position="0 0 0"</a-text>
+            <a-image src="#CagneyCarnation" width="1.7" height="0.9" rotation="0 0 0" position="0 0 0"></a-image>
+        </a-marker>
        
         
-        <a-marker-camera id='card-O' type='pattern' url='/assets/pattern-card-O.patt'>
+        <a-marker id="card-O" type="pattern" url="assets/pattern-card-O.patt">
             <a-entity id="sphere" geometry="primitive: sphere; width: 0.2; depth: 0.2; height: 0.2" position="0 0 0" material="color: #4CC3D9"></a-entity>
-        </a-marker-camera>
+            <a-image src="assets/card-O.png" position="0 0 0" rotation="-90 0 0" width="1" height="1"></a-image>
+        </a-marker>
         
-        <a-marker-camera id='card-H' type='pattern' url='/assets/pattern-card-H.patt'>
+        <a-marker-camera id="card-H" type='pattern' url="assets/pattern-card-H.patt">
             <a-entity id="sphere" geometry="primitive: sphere; width: 0.2; depth: 0.2; height: 0.2" position="0 0 0" material="color: #4CC3D9"></a-entity>
+             <a-image src="assets/card-H.png" position="0 0 0" rotation="-90 0 0" width="1" height="1"></a-image>
         </a-marker-camera>
         
         <a-entity camera></a-entity>
