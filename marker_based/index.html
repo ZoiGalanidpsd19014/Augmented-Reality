@@ -44,7 +44,7 @@
 
         var entity1 = document.querySelector('#sphere')
         var entity2 = document.querySelector('#Oxygen_molecule')
-        var entity3 = document.querySelector('#Water drop')
+        var entity3 = document.querySelector('#Water_drop')
 
 
   if (markerDistance < 2) {
@@ -83,11 +83,11 @@
         </a-assets-item>
           
           <a-assets-item
-            id="Hydrogen" src=>
+            id="Hydrogen" src="assets/Oxygen_molecule.glb">
         </a-assets-item>
           
           <a-assets-item
-            id="H2O" src="assets/Water drop.glb">
+            id="H2O" src="assets/Water_drop.glb">
         </a-assets-item>
          
 
@@ -104,12 +104,12 @@
         </a-marker>
         
         <a-marker id="card-H" type='pattern' url="assets/pattern-card-H.patt">
-            <a-entity id="sphere" geometry="primitive: sphere; width: 0.01; depth: 0.01; height: 0.01" position="0 0 0" material="color: #9hH7D0"></a-entity>
+            <a-entity gltf-model="assets/Oxygen_molecule.glb" position="0 1 0" scale="1.1 1.1 1.1"></a-entity>
              <a-image src="assets/card-H.png" position="0 0 0" rotation="-90 0 0" width="1" height="1"></a-image>
         </a-marker>
         
         <a-entity camera></a-entity>
-        <a-entity id="H2O" gltf-model="assets/Water drop.glb" position="0 1 0" scale="0.1 1 1.1"></a-entity>
+        <a-entity id="H2O" gltf-model="assets/Water_drop.glb" position="0 1 0" scale="0.1 1 1.1"></a-entity>
           
 </body>
 </html>
