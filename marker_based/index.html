@@ -42,8 +42,8 @@
         var marker2 = document.querySelector("#pattern-card-H")
 
 
-        var entity1 = document.querySelector('#Oxygen_molecule')
-        var entity2 = document.querySelector('#Oxygen_molecule')
+        var entity1 = document.querySelector('#oxygen_molecule')
+        var entity2 = document.querySelector('#oxygen_molecule')
         var entity3 = document.querySelector('#Water_drop')
 
 
@@ -79,11 +79,11 @@
 	    
 	    
           <a-assets-item
-            id="Oxygen" src="assets/Oxygen_molecule.glb">
+            id="Oxygen" src="assets/oxygen_molecule.gltf">
         </a-assets-item>
           
           <a-assets-item
-            id="Hydrogen" src="assets/Oxygen_molecule.glb">
+            id="Hydrogen" src="assets/oxygen_molecule.gltf">
         </a-assets-item>
           
           <a-assets-item
@@ -99,12 +99,12 @@
        
         
         <a-marker id="card-O" type="pattern" url="assets/pattern-card-O.patt">
-            <a-entity gltf-model="assets/Oxygen_molecule.glb" position="0 1 0" scale="1.1 1.1 1.1"></a-entity>
+            <a-entity gltf-model="assets/oxygen_molecule.gltf" position="0 1 0" scale="1.1 1.1 1.1"></a-entity>
             <a-image src="assets/card-O.png" position="0 0 0" rotation="-90 0 0" width="1" height="1"></a-image>
         </a-marker>
         
         <a-marker id="card-H" type='pattern' url="assets/pattern-card-H.patt">
-            <a-entity gltf-model="assets/Oxygen_molecule.glb" position="0 1 0" scale="1.1 1.1 1.1"></a-entity>
+            <a-entity gltf-model="assets/oxygen_molecule.gltf" position="0 1 0" scale="1.1 1.1 1.1"></a-entity>
              <a-image src="assets/card-H.png" position="0 0 0" rotation="-90 0 0" width="1" height="1"></a-image>
         </a-marker>
         
