@@ -43,7 +43,7 @@
 
 
         var entity1 = document.querySelector('#sphere')
-        var entity2 = document.querySelector('#sphere')
+        var entity2 = document.querySelector('#Oxygen_molecule')
         var entity3 = document.querySelector('#Water drop')
 
 
@@ -79,7 +79,7 @@
 	    
 	    
           <a-assets-item
-            id="Oxygen" src= >
+            id="Oxygen" src="/assets/Oxygen_molecule.fbx">
         </a-assets-item>
           
           <a-assets-item
@@ -99,7 +99,7 @@
        
         
         <a-marker id="card-O" type="pattern" url="assets/pattern-card-O.patt">
-            <a-entity id="sphere" geometry="primitive: sphere; width: 0.01; depth: 0.01; height: 0.01" position="0 0 0" material="color: #4CA0D9"></a-entity>
+            <a-entity gltf-model="assets/Oxygen_molecule.glb" position="0 1 0" scale="1.1 1.1 1.1"></a-entity>
             <a-image src="assets/card-O.png" position="0 0 0" rotation="-90 0 0" width="1" height="1"></a-image>
         </a-marker>
         
