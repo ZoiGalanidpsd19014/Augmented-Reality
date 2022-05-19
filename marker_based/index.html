@@ -35,7 +35,7 @@
          marker2Pos = new THREE.Vector3();
          marker2.object3D.getWorldPosition(marker2Pos);
 
-                //distance
+               
         var markerDistance = marker1Pos.distanceTo(marker2Pos);
 
         var marker1 = document.querySelector("#pattern-card-O")
@@ -76,6 +76,8 @@
         <a-assets>
             <img id="CagneyCarnation" src="assets/c1ce96fb12ad41a10ec78094e4f9db8b.jpg">
         </a-assets>
+	    
+	    
           <a-assets-item
             id="Oxygen" src= >
         </a-assets-item>
@@ -101,13 +103,13 @@
             <a-image src="assets/card-O.png" position="0 0 0" rotation="-90 0 0" width="1" height="1"></a-image>
         </a-marker>
         
-        <a-marker-camera id="card-H" type='pattern' url="assets/pattern-card-H.patt">
+        <a-marker id="card-H" type='pattern' url="assets/pattern-card-H.patt">
             <a-entity id="sphere" geometry="primitive: sphere; width: 0.2; depth: 0.2; height: 0.2" position="0 0 0" material="color: #4CC3D9"></a-entity>
              <a-image src="assets/card-H.png" position="0 0 0" rotation="-90 0 0" width="1" height="1"></a-image>
-        </a-marker-camera>
+        </a-marker>
         
         <a-entity camera></a-entity>
-        <a-entity marker-distance></a-entity>
+        <a-entity id="H2O" gltf-model="assets/Water drop.glb" position="0 1 0" scale="1.1 1 1.1"></a-entity>
           
 </body>
 </html>
