@@ -15,11 +15,20 @@
         vr-mode-ui="enabled: false"
 		embedded
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
-
-        <a-entity gps-entity-place="latitude: 44.4908615; longitude: 11.3326416;" gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" animation-mixer scale="0.15 0.15 0.15"/>
+	    
+  <a-assets><img id="Syros" src="assets/.jpg"></a-assets>
+	    
+        <a-entity gps-entity-place="latitude: 37.44470396430821; longitude: 24.94290675928762;"  rotation="0 180 0" animation-mixer scale="0.15 0.15 0.15"/>
+        
+	    	     
+37.44470396430821, 24.94290675928762
+            
+	    
+           <a-entity position="0 0 0">
+            <a-image src="#Syros" width="1.7" height="0.9" rotation="90 180 0" position="0 0 0"></a-image>
+        </a-entity>
         
         
-        
-        <a-camera gps-camera rotation-reader></a-camera>
+        <a-camera rotation-reader gps-camera= "simulateLatitude: 37.44470396430821 simulateLongtitude: 24.94290675928762 minDistance: 1; maxDistance: 700;"></a-camera>
 	</a-scene>
 </body>
