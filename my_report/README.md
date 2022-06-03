@@ -31,6 +31,9 @@ Eπειδή αντιμετώπισα πολλά προβλήματα με την
 
 # 3rd Deliverable 
 
+Αρχικά πήρα τον κώδικα από το syros.index για το 3d αντικειμενο του magnemite, εβαλα το δικό μου 3δ από τα assets του location_based. Μπήκα στο google maps και πήρα συντεταγμένες του σημείου ενδιαφερόντος. Έβαλα τις συντεταγμένες στο latitude - longtitude και τις άλλαξα λίγο για το simulation για να φανεί στη κάμερα. Το αντικείμενο το πήρα από εδώ. Για το syros.index χρησιμοποίησα την ίδια λογική. Μέσα στο entity έβαλα ένα τεξτ που το πήρα από τη βικιπαίδεια εδώ.<a href="https://el.wikipedia.org/wiki/%CE%94%CE%AE%CE%BC%CE%BF%CF%82_%CE%A3%CF%8D%CF%81%CE%BF%CF%85_
+  _%CE%95%CF%81%CE%BC%CE%BF%CF%8D%CF%80%CE%BF%CE%BB%CE%B7%CF%82">τεξτ βικιπαιδεια</a>
+
 
 # Conclusions
 
@@ -45,3 +48,7 @@ Eπειδή αντιμετώπισα πολλά προβλήματα με την
 <p><a href="https://github.com/jeromeetienne/AR.js/issues/164#issuecomment-332065686">issue για πατερν που δε δουλεύει για μπρακετς</a></p>
 <p><a href="https://sketchfab.com/3d-models/oxygen-molecule-c536fd0a0b754fc4856ee7eb85ee0b63">3d oxygen and hydrogen molecule</a>.<p>
 <p><a href="https://anyconv.com/gltf-converter/">gltf converter</a><p>
+<p><a href="https://el.wikipedia.org/wiki/%CE%94%CE%AE%CE%BC%CE%BF%CF%82_%CE%A3%CF%8D%CF%81%CE%BF%CF%85_
+  _%CE%95%CF%81%CE%BC%CE%BF%CF%8D%CF%80%CE%BF%CE%BB%CE%B7%CF%82">τεξτ βικιπαιδεια</a><p>
+<p><a href="https://www.turbosquid.com/3d-models/republic-china-flag-max-free/663944">3d model china for location based</a></p>
+  
