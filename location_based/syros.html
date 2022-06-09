@@ -15,24 +15,15 @@
         vr-mode-ui="enabled: false"
 		embedded
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
-	    
- <a-entity id="cameraRig">
-    	<a-entity id="head" camera wasd-controls look-controls cursor="rayOrigin: mouse" position="0 1.6 0"></a-entity>
- </a-entity>
-	    
+
         
-	    
-	    
-        
-	    
-           <a-entity position="-1 1.6 0">
-           
-             <a-text gps-entity-place="latitude: 37.44470396430821; longitude: 24.94290675928762;" color="red" value="Το Δημαρχείο Ερμούπολης είναι κτίριο που σχεδίασε ο Ερνέστος Τσίλλερ και κατασκευάστηκε μεταξύ 1875 και 1891 στην πρωτεύουσα της Σύρου." width="6"  class="bolded" rotation="0 180 0" position="0 0 0" text="font: monoid; align: center;"></a-text>
+        <a-entity gps-entity-place="latitude: 3.726.466; longitude: 2.456.511″;" rotation="0 180 0">
+          <a-text value="Vaporia" align="center" position="0 -0.50 0" side="double"></a-text>
+          <a-image src="assets/vaporia.jpg" position="0 0 0" side="double" width="1" height="1"></a-image>/>
         </a-entity>
-        
-	    
-	  
-        
-        <a-camera rotation-reader gps-camera= "simulateLatitude: 37.44470396430818; simulateLongtitude: 24.94290675928779; minDistance: 1; maxDistance: 700;"></a-camera>
+
+
+
+        <a-camera gps-camera rotation-reader></a-camera>
 	</a-scene>
 </body>
